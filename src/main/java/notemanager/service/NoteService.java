@@ -5,9 +5,13 @@ import notemanager.repository.NoteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+// The @Slf4j annotation can be used to generate a logger field in the class, for debugging or errors.
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.List;
 
 @Service
+@Slf4j
 public class NoteService {
 
     // The @Autowired annotation is used to inject the NoteRepository bean into the NoteService class
