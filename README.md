@@ -4,9 +4,8 @@ The project is built with Maven, to start the application one can:
 - Run the Application.java file in src/main/java/notemanager/Application.java
 - Write the command 'mvn spring-boot:run' in the terminal
 
-After the application is running, access http://localhost:8080/notes for the main page or http://localhost:8080/h2-console
-
-To access the DB:
+After the application is running, access http://localhost:8080/notes for the main page, 
+or to access the DB: http://localhost:8080/h2-console 
 
 JDBC URL: jdbc:h2:file:./data/notedb
 
