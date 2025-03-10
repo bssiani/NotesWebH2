@@ -5,10 +5,15 @@ The project is built with Maven, to start the application one can:
 - Write the command 'mvn spring-boot:run' in the terminal
 
 After the application is running, access http://localhost:8080/notes for the main page or http://localhost:8080/h2-console
+
 To access the DB:
+
 JDBC URL: jdbc:h2:file:./data/notedb
+
 User Name: admin
+
 Password: ris
+
 
 As for the architecture, I used MVC, where the application can be divided into:
 - Model (represents and maps the data to the db)
