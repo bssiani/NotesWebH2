@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-// This class is a controller that handles the requests and returns the responses to the /notes URL.
+// This class is the controller that handles the requests and returns the responses to the /notes URL.
 
 @Controller
 public class NoteController {
@@ -49,7 +49,7 @@ public class NoteController {
         return "redirect:/notes";
     }
 
-    // This method retrieves the note with the given ID and adds it to the model
+    // This method calls the edit-note page, bringing the note with the passed ID 
 
     @GetMapping("/notes/edit")
     public String showEditForm(@RequestParam Long id, Model model) {
