@@ -11,7 +11,7 @@ JDBC URL: jdbc:h2:file:./data/notedb
 
 User Name: admin
 
-Password: ris
+Password: bss
 
 
 As for the architecture, I used MVC, where the application can be divided into:
