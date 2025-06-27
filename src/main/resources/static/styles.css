@@ -35,6 +35,13 @@ h1 {
     resize: vertical;
 }
 
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -134,4 +141,44 @@ li a:hover {
     justify-content: space-between;
     margin-top: 10px;
     gap: 10px;
+}
+
+.urgency-badge {
+    background-color: #ff3b3b;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.due-date {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.action-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.tags span {
+    background-color: #e0e0e0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 4px;
+    font-size: 12px;
 }

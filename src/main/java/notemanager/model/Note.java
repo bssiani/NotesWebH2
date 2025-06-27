@@ -1,5 +1,8 @@
 package notemanager.model;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
 
 // Here I define the Note entity, which will be used to create the notes table in the database with id, title, and content.
@@ -13,11 +16,16 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-
     private String title;
     private String content;
 
-    // Getters and setters for the id, title, and content fields
+    private LocalDate dueDate;
+    private int editCount;
+    private LocalDateTime lastEdited;
+    private double urgencyScore;
+    private String tags;
+
+    // Getters and setters for all the variables
     
     public Long getId() {
         return id;
@@ -41,5 +49,45 @@ public class Note {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
+
+    public int getEditCount() {
+        return editCount;
+    }
+
+    public void setEditCount(int editCount) {
+        this.editCount = editCount;
+    }
+
+    public LocalDateTime getLastEdited() {
+        return lastEdited;
+    }
+
+    public void setLastEdited(LocalDateTime lastEdited) {
+        this.lastEdited = lastEdited;
+    }
+
+    public String getTags() {
+        return tags;
+    }
+
+    public void setTags(String tags) {
+        this.tags = tags;
+    }
+
+    public double getUrgencyScore() {
+        return urgencyScore;
+    }
+
+    public void setUrgencyScore(double urgencyScore) {
+        this.urgencyScore = urgencyScore;
     }
 }
