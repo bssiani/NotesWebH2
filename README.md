@@ -10,9 +10,9 @@ or to access the DB: http://localhost:8080/h2-console
 
 JDBC URL: jdbc:h2:file:./data/notedb
 
-User Name: admin
+User Name: sa
 
-Password: bss
+Password:
 
 
 As for the architecture, I used MVC, where the application can be divided into:
